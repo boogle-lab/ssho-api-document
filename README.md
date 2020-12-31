@@ -52,5 +52,13 @@
      - 웹 호스팅
        - ssho-admin-web
 
-## API 명세
- - https://github.com/ssho-lab/ssho-dev-wiki/wiki
+## API
+ - API 명세 WIKI
+   - https://github.com/ssho-lab/ssho-dev-wiki/wiki
+ - 서비스별 API
+   - core-api
+     - http://api.ssho.tech:8080 
+   - log-api
+     - http://api.ssho.tech:8082 
+   - reco-api
+     - http://3.35.129.79:5000
