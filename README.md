@@ -62,3 +62,6 @@
      - http://api.ssho.tech:8082 
    - reco-api
      - http://3.35.129.79:5000
+     
+## Jenkins
+ - http://jenkins.ssho.tech:8080
