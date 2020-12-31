@@ -51,3 +51,6 @@
      - 정적 파일 저장
      - 웹 호스팅
        - ssho-admin-web
+
+## API 명세
+ - https://github.com/ssho-lab/ssho-dev-wiki/wiki
