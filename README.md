@@ -65,3 +65,10 @@
      
 ## Jenkins
  - http://jenkins.ssho.tech:8080
+ - job
+    - ssho-carddeck-update-invoker
+      - 회원 상품 카드덱 캐시 업데이트 invoker
+      - 일정 주기마다 추천서버를 거쳐 상품 카드덱 캐시를 업데이트
+    - ssho-item-crawler
+      - 상품 크롤러
+      - 일정 주기마다 상품 크롤링 및 상품 ES index 업데이트
