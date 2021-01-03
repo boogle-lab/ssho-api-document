@@ -24,6 +24,11 @@
  - ssho-item-crawler
    - 상품 크롤러(Puppeteer)
    - https://github.com/ssho-lab/ssho-item-crawler
+   
+   
+## 시스템 아키텍쳐
+<img width="718" alt="아키텍쳐" src="https://user-images.githubusercontent.com/23696493/103483664-2e76d780-4e2c-11eb-8016-12bc33ecca54.PNG">
+
  
 ## 인프라
   - 가상서버
