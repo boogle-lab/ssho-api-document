@@ -27,7 +27,7 @@
    
    
 ## 시스템 아키텍쳐
-<img width="1000" alt="아키텍쳐" src="https://user-images.githubusercontent.com/23696493/103483664-2e76d780-4e2c-11eb-8016-12bc33ecca54.PNG">
+<img width="1000" alt="아키텍쳐" src="https://user-images.githubusercontent.com/23696493/103483814-29665800-4e2d-11eb-9eab-2a10432e095b.png">
 
  
 ## 인프라
