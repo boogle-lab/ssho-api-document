@@ -67,7 +67,38 @@
      - http://api.ssho.tech:8082 
    - reco-api
      - http://3.35.129.79:5000
+
+
+## DB Table / Elasticsearch Index
+
+#### USER (회원)(MySQL)
+
+  | 필드   |      타입       |Default|
+  |:-------------:|:-------------:|:-------------:|
+  | id(PK)(AI)  |  INT(11)      |        |
+  | email   |  VARCAHR(200) |        |
+  | password|  VARCAHR(200) |        |
+  | name    |  VARCAHR(200) |        |
+  | admin   |  TINYINT(4)   |        |
+  | birth   |  VARCAHR(100) |NULLABLE|
+  | gender  |  VARCAHR(45)  |NULLABLE|
+  | social  |  TINYINT(4)   |        |
+  | channel |  VARCAHR(100) |NULLABLE|
      
+
+#### USER CARD SET (회원 카드셋)(MySQL)
+
+  | 필드   |      타입       |Default|
+  |:-------------:|:-------------:|:-------------:|
+  | id(PK)(AI)  |  INT(11)      |        |
+  | userId      |  INT(11)      |        |
+  | tag_id      |  VARCAHR(100) |        |
+  | selected_cat  | VARCAHR(100)  |        |
+  | start_price   |  VARCAHR(100) |        |
+  | end_price   |  VARCAHR(100)   |        |
+  | create_time  |  VARCAHR(200)  |NULLABLE|
+  | title  |  TINYINT(4)          |NULLABLE|
+
 ## Jenkins
  - http://jenkins.ssho.tech:8080
  - job
