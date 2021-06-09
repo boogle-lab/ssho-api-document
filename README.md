@@ -18,11 +18,11 @@
  - ssho-data-analysis-server
    - 데이터 분석 및 집계 백엔드(Node.js)
    - https://github.com/ssho-lab/ssho-data-analysis-server
- - ssho-admin-web
-   - 어드민 웹(React)
-   - https://github.com/ssho-lab/ssho-admin-web
+ - ssho-admin-ssr
+   - 어드민 웹(Next.js)
+   - https://github.com/ssho-lab/ssho-admin-ssr
  - ssho-item-crawler
-   - 상품 크롤러(Puppeteer)
+   - 상품 크롤러(Puppeteer/Node.js)
    - https://github.com/ssho-lab/ssho-item-crawler
    
    
@@ -32,14 +32,10 @@
  
 ## 인프라
   - 가상서버
-    - AWS EC2(1)
+    - AWS EC2
       - 1GB RAM, 1vCPU
       - AWS ECS 클러스터를 가상서버 위에 설치하여 컨테이너 기반 실행
       - ssho-core-api, ssho-log-api
-    - AWS EC2(2)
-      - 1GB RAM, 1vCPU
-      - ssho-reco-api
-      - 1월중으로 해당 서버 이관 예정
     - AWS LightSail
       - 512MB RAM, 1vCPU
       - jenkins 배포를 위해 사용
@@ -75,29 +71,29 @@
 
   | 필드   |      타입       |Default|
   |:-------------:|:-------------:|:-------------:|
-  | id(PK)(AI)  |  INT(11)      |        |
-  | email   |  VARCAHR(200) |        |
-  | password|  VARCAHR(200) |        |
-  | name    |  VARCAHR(200) |        |
-  | admin   |  TINYINT(4)   |        |
-  | birth   |  VARCAHR(100) |NULLABLE|
-  | gender  |  VARCAHR(45)  |NULLABLE|
-  | social  |  TINYINT(4)   |        |
-  | channel |  VARCAHR(100) |NULLABLE|
+  | id(PK)(AI) |  INT(11)  |        |
+  | email      |  VARCAHR(100) |        |
+  | password   |  VARCAHR(200) |        |
+  | name       |  VARCAHR(45)  |        |
+  | admin      |  TINYINT      |        |
+  | birth      |  VARCAHR(100) |NULLABLE|
+  | gender     |  VARCAHR(45)  |NULLABLE|
+  | social     |  TINYINT      |NULLABLE|
+  | channel    |  VARCAHR(100) |NULLABLE|
      
 
 #### USER CARD SET (회원 카드셋)(MySQL)
 
   | 필드   |      타입       |Default|
   |:-------------:|:-------------:|:-------------:|
-  | id(PK)(AI)  |  INT(11)      |        |
-  | userId      |  INT(11)      |        |
-  | tag_id      |  VARCAHR(100) |        |
-  | selected_cat  | VARCAHR(100)  |        |
+  | id(PK)(AI)    |  INT(11)      |        |
+  | userId        |  INT(11)      |        |
+  | tag_id        |  VARCAHR(100) |        |
+  | selected_cat  |  VARCAHR(100) |        |
   | start_price   |  VARCAHR(100) |        |
-  | end_price   |  VARCAHR(100)   |        |
-  | create_time  |  VARCAHR(200)  |NULLABLE|
-  | title  |  TINYINT(4)          |NULLABLE|
+  | end_price     |  VARCAHR(100) |        |
+  | create_time   |  VARCAHR(200) |NULLABLE|
+  | title         |  VARCAHR(200) |NULLABLE|
 
 ## Jenkins
  - http://jenkins.ssho.tech:8080
